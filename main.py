@@ -34,7 +34,11 @@ def main():
 
 
 # Recursive Method with implicit cache provided by functools
-# set cache with 1000 (need to set a big values, small cache is NOT useful)
+# ... https://docs.python.org/3/library/functools.html#functools.lru_cache
+# Decorator to wrap a function with a memoizing callable that saves up to
+# the maxsize most recent calls. It can save time when an expensive
+# or I/O bound function is periodically called with the same arguments.
+# set cache with 1000
 # @lru_cache(maxsize = 1000)
 
 # Using explicit cache
